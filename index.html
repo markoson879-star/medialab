@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a1020"><meta name="description" content="Интерактивный 14-дневный курс мультимедиа: уроки, упражнения, заметки, прогресс и портфолио.">
+<title>MediaLab — мультимедиа с нуля</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+<a href="#overview" class="logo"><span class="logoicon">◈</span> Media<span>Lab</span><small>ACADEMY</small></a>
+<div class="sidebarlabel">ОБУЧЕНИЕ</div>
+<nav class="mainnav" aria-label="Главная навигация">
+<button data-view="overview" class="navbtn active">⌂ <span>Обзор курса</span></button>
+<button data-view="lessons" class="navbtn">▤ <span>Все уроки</span></button>
+<button data-view="portfolio" class="navbtn">▣ <span>Моё портфолио</span></button>
+<button data-view="resources" class="navbtn">◇ <span>Ресурсы</span></button>
+</nav>
+<div class="sidebarlabel weeklabel">ТВОИ УРОКИ</div><div id="sideDays" class="sideDays"></div>
+<div class="sidebottom"><div class="sideprogress"><span>Твой прогресс</span><b id="sidePercent">0%</b><div class="track"><i id="sideBar"></i></div></div><button id="exportBtn" class="ghostbtn">↓ Экспорт прогресса</button><label class="importlabel" for="importFile">↑ Импорт прогресса</label><input id="importFile" type="file" accept="application/json,.json" hidden></div>
+</aside>
+<div class="maincolumn">
+<header class="topbar"><button id="menuBtn" class="menubtn" aria-label="Открыть меню">☰</button><div class="breadcrumb">MEDIA LAB <span>/</span> <span id="breadcrumb">Обзор курса</span></div><div class="topright"><span class="statusdot"></span> Бесплатный курс <span class="topavatar">ML</span></div></header>
+<main id="content" tabindex="-1"></main>
+<footer>MediaLab Academy · 14 дней по 60 минут · Данные хранятся только в этом браузере</footer>
+</div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
